@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arraiá do Lampião</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+    <img src="img/Logo vintage do Bar Raiz (1).png" alt="Logo Bar São João" class="logo">
+    <h1>Bar_Raiz</h1>
+</header>
+
+<section class="historia">
+    <h2>📜 Nossa História</h2>
+    <p>
+    O Bar Raiz começou de forma bem simples, sem estrutura e sem grandes expectativas.
+
+No início, era apenas um pequeno ponto na frente de casa, com poucas mesas, um isopor com bebidas e algumas comidas feitas no dia, como milho cozido, caldos e petiscos. A ideia era apenas conseguir uma renda extra, aproveitando o movimento da rua, principalmente nos fins de semana.
+
+Os primeiros clientes foram vizinhos e conhecidos. Gente que parava mais pela conversa do que pelo consumo. Mas o ambiente simples, a comida caseira e o jeito acolhedor fizeram com que as pessoas começassem a voltar… e trazer mais gente.
+
+Com o tempo, o movimento aumentou. Foi preciso organizar melhor o espaço, comprar mais mesas, melhorar o atendimento e ampliar o cardápio. Aos poucos, o lugar deixou de ser improvisado e começou a ganhar identidade própria.
+
+A inspiração nas festas juninas veio naturalmente. As bandeirinhas, o forró tocando e as comidas típicas deram ao bar um diferencial que chamou ainda mais atenção. O clima lembrava São João o ano inteiro — simples, animado e cheio de tradição.
+
+O crescimento não foi rápido nem fácil, mas foi constante. Cada melhoria veio com esforço e dedicação. O que antes era só uma tentativa de renda se transformou em um ponto conhecido na região.
+
+Com o passar do tempo, o Bar São João Raiz se tornou um dos lugares mais frequentados da cidade, conhecido não só pelas comidas e bebidas, mas pela experiência e pelo ambiente acolhedor.
+
+Hoje, é visto como um bar famoso, mas sem perder a essência de onde tudo começou: um lugar simples, construído com trabalho, persistência e respeito pelas raízes.
+    </p>
+</section>
+
+<!-- PRATOS -->
+<section>
+  <h2>Comidas</h2>
+  <div class="container">
+
+    <!-- PAMONHA -->
+    <div class="card">
+      <img src="img/pamonha.jpg">
+      <h3>Pamonha</h3>
+      <p>Deliciosa pamonha feita com milho verde fresco, cremosa e saborosa, preparada na palha e cozida do jeito tradicional.</p>
+
+       <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$10,00</span>
+      <button onclick="adicionar('Pamonha', 9)">Adicionar</button>
+    </div>
+
+    <!-- MILHO COZIDO -->
+    <div class="card">
+      <img src="img/milho-cozido-1.webp">
+      <h3>Milho Cozido</h3>
+      <p>Milho cozido na hora, macio e saboroso, servido quentinho com um toque de sal e manteiga 🌽🔥</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 8,00</span>
+      <button onclick="adicionar('Milho cozido', 9)">Adicionar</button>
+    </div>
+
+    <!-- BAIÃO DE DOIS -->
+    <div class="card">
+      <img src="img/baiao de dois.avif">
+      <h3>Baião de Dois</h3>
+      <p>Tradicional baião de dois feito com arroz, feijão e temperos nordestinos.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 15,00</span>
+      <button onclick="adicionar('Baião de dois', 9)">Adicionar</button>
+    </div>
+
+    <!-- CUSCUZ -->
+    <div class="card">
+      <img src="img/farofa-de-cuscuz.webp">
+      <h3>Cuscuz Nordestino</h3>
+      <p>Cuscuz de milho leve e macio, preparado no vapor e servido quentinho.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 20,00</span>
+      <button onclick="adicionar('Cuscuz', 9)">Adicionar</button>
+    </div>
+
+    <!-- ESPETINHO -->
+    <div class="card">
+      <img src="img/1752041986039.avif">
+      <h3>Espetinho Junino</h3>
+      <p>Espetinho grelhado na brasa, suculento e bem temperado 🔥</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 23,00</span>
+      <button onclick="adicionar('Espetinho', 9)">Adicionar</button>
+    </div>
+
+    <!-- BOLO DE MILHO -->
+    <div class="card">
+      <img src="img/14_19_31_204_bolo_milho.avif">
+      <h3>Bolo de Milho</h3>
+      <p>Bolo de milho macio e fofinho, com sabor caseiro e levemente adocicado.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$9,00</span>
+      <button onclick="adicionar('Bolo de milho', 9)">Adicionar</button>
+    </div>
+
+  </div>
+</section>
+
+</div>
+</section>
+
+<!-- SOBREMESAS -->
+<section>
+<h2>🍰 Sobremesas</h2>
+<div class="container">
+
+  
+    <!-- COCADA -->
+    <div class="card">
+      <img src="img/cocada.jpg">
+      <h3>Cocada</h3>
+      <p>Doce tradicional de coco ralado, macio e saboroso.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 5,00</span>
+      <button onclick="adicionar('Cocada', 3)">Adicionar</button>
+    </div>
+
+    <!-- BOLO DE FUBÁ -->
+    <div class="card">
+      <img src="img/bolo de fuba.jpg">
+      <h3>Bolo de Fubá</h3>
+      <p>Bolo leve e macio, com sabor caseiro delicioso.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 9,00</span>
+      <button onclick="adicionar('Bolo de fubá', 6)">Adicionar</button>
+    </div>
+
+    <!-- MAÇÃ DO AMOR -->
+    <div class="card">
+      <img src="img/maçã-amor-tradicional-chocolate-768x619.jpg">
+      <h3>Maçã do Amor</h3>
+      <p>Maçã fresca coberta com calda doce crocante.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 7,00</span>
+      <button onclick="adicionar('Maçã do amor', 7)">Adicionar</button>
+    </div>
+
+    <!-- ARROZ DOCE -->
+    <div class="card">
+      <img src="img/arroz-doce-com-leite-condensado-cozido-35183.jpg">
+      <h3>Arroz Doce</h3>
+      <p>Sobremesa cremosa feita com arroz e leite condensado.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 18,00</span>
+      <button onclick="adicionar('Arroz doce', 4)">Adicionar</button>
+    </div>
+
+    <!-- PAÇOCA -->
+    <div class="card">
+      <img src="img/paçoca.jpg">
+      <h3>Paçoca</h3>
+      <p>Doce de amendoim macio e sabor intenso.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 4,00</span>
+      <button onclick="adicionar('Paçoca', 4)">Adicionar</button>
+    </div>
+
+    <!-- BOLO NO POTE -->
+    <div class="card">
+      <img src="img/bolo no pote.webp">
+      <h3>Bolo no Pote</h3>
+      <p>Camadas de bolo com recheios deliciosos como brigadeiro e doce de leite.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 10,00</span>
+      <button onclick="adicionar('Bolo no pote', 8)">Adicionar</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEBIDAS -->
+<section>
+<h2>🥤 Bebidas</h2>
+<div class="container">
+
+<!-- SUCO -->
+    <div class="card">
+      <img src="img/Suco-de-Caju.jpg">
+      <h3>Suco de Caju</h3>
+      <p>Suco natural de caju, refrescante e levemente adocicado.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$8,00</span>
+      <button onclick="adicionar('Suco de caju', 6)">Adicionar</button>
+    </div>
+
+    <!-- REFRIGERANTE -->
+    <div class="card">
+      <img src="img/cola.webp">
+      <h3>Refrigerante</h3>
+      <p>Gelado com gelo, perfeito para refrescar.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 9,00</span>
+      <button onclick="adicionar('Refrigerante', 6)">Adicionar</button>
+    </div>
+
+    <!-- CHÁ -->
+    <div class="card">
+      <img src="img/bk-4934-quentao-blog.webp">
+      <h3>Chá</h3>
+      <p>Bebida quente e aromática feita com especiarias.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 6,00</span>
+      <button onclick="adicionar('Chá', 5)">Adicionar</button>
+    </div>
+
+    <!-- CALDO DE CANA -->
+    <div class="card">
+      <img src="img/caldo-de-cana.jpg">
+      <h3>Caldo de Cana</h3>
+      <p>Bebida natural extraída da cana-de-açúcar, doce e refrescante.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 6,00</span>
+      <button onclick="adicionar('Caldo de cana', 4)">Adicionar</button>
+    </div>
+
+    <!-- ÁGUA -->
+    <div class="card">
+      <img src="img/agua.jpg">
+      <h3>Água</h3>
+      <p>Gelada e refrescante.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 7,00</span>
+      <button onclick="adicionar('Água', 3)">Adicionar</button>
+    </div>
+
+    <!-- CAFÉ -->
+    <div class="card">
+      <img src="img/historia_do_cafe-968x660-1.jpg">
+      <h3>Café</h3>
+      <p>Quentinho e saboroso.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 6,00</span>
+      <button onclick="adicionar('Café', 5)">Adicionar</button>
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+<h2>🥤Bebidas com alcool</h2>
+<div class="container">
+
+<!-- WHISKY -->
+    <div class="card">
+      <img src="img/Uísque.jpeg">
+      <h3>Uísque</h3>
+      <p>Bebida destilada com sabor forte e marcante.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 29,00</span>
+      <button onclick="adicionar('Uísque', 12)">Adicionar</button>
+    </div>
+
+    <!-- CERVEJA -->
+    <div class="card">
+      <img src="img/cerveja.webp">
+      <h3>Cerveja</h3>
+      <p>Refrescante e muito consumida.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 17,00</span>
+      <button onclick="adicionar('Cerveja', 8)">Adicionar</button>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="card">
+      <img src="img/drink.jpg">
+      <h3>Drinks</h3>
+      <p>Mistura de ingredientes com ou sem álcool.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 18,00</span>
+      <button onclick="adicionar('Drinks', 15)">Adicionar</button>
+    </div>
+
+    <!-- SKOL -->
+    <div class="card">
+      <img src="img/skol beats.jpg">
+      <h3>Skol Beats</h3>
+      <p>Bebida leve, refrescante e levemente adocicada.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 10,00</span>
+      <button onclick="adicionar('Skol Beats', 10)">Adicionar</button>
+    </div>
+
+    <!-- CAMPARI -->
+    <div class="card">
+      <img src="img/campari.webp">
+      <h3>Campari</h3>
+      <p>Bebida alcoólica com sabor marcante e levemente amargo.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 30,00</span> 
+      <button onclick="adicionar('Campari', 11)">Adicionar</button>
+    </div>
+
+    <!-- DREHER -->
+    <div class="card">
+      <img src="img/dreher.jpg">
+      <h3>Dreher</h3>
+      <p>Bebida alcoólica tipo conhaque, sabor intenso.</p>
+
+      <div class="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+
+      <span>R$ 29,00</span>
+      <button onclick="adicionar('Dreher', 9)">Adicionar</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="pedido">
+    <h2>🛒 Seu Pedido</h2>
+
+    <div class="pedido-box">
+        <ul id="lista"></ul>
+
+        <p id="total">Total: R$ 0,00</p>
+
+        <label>Forma de pagamento:</label>
+        <select>
+            <option>PIX</option>
+            <option>Dinheiro</option>
+            <option>Cartão</option>
+        </select>
+
+        <button onclick="finalizar()">Finalizar Pedido</button>
+        <script src="script.js"></script>
+    </div>
+</section>
+
+
+  </div>
+
+</head>
+<body>
+    
+</body>
+</html>
